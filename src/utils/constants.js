@@ -1,4 +1,4 @@
-const API_ROOT = 'http://localhost:8398';
+const API_ROOT = 'http://localhost:8399';
 
 export const API_URLS = {
   //API URL for User
@@ -8,4 +8,4 @@ export const API_URLS = {
 
 };
 
-export const LOCAL_STORAGE_TOKEN_KEY = '__myTokens_token__';
+export const LOCAL_STORAGE_TOKEN_KEY = '__my_elderHealth_Tokens__';
