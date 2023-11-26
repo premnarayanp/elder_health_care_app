@@ -14,8 +14,70 @@ import { connect } from 'react-redux';
   return (
     auth.user?
       <div className="nav">
-        <Link to="/">
-           <button className='menuButton'>Home</button>
+         <Link to="/">
+         <div className='menuItem'>
+            <button className='menuButton'>Home</button>
+          </div>
+         </Link>
+
+        <Link to="/healthTips">
+          <div className='menuItem'>
+            <button className='menuButton'>Health Tips</button>
+           </div>
+        </Link>
+
+        <Link to="/healthIssues">
+          <div className='menuItem'>
+            <button className='menuButton'>Health Issues</button>
+          </div>
+        </Link>
+
+        <Link to="/diseases">
+          <div className='menuItem'>
+            <button className='menuButton'>Diseases</button>
+          </div>
+        </Link>
+
+        <Link to="/todoList">
+          <div className='menuItem'>
+            <button className='menuButton'>Todo List</button>
+          </div>
+        </Link>
+
+        <Link to="/foods">
+          <div className='menuItem'>
+            <button className='menuButton'>Foods</button>
+          </div>
+        </Link>
+
+        <Link to="/yoga">
+          <div className='menuItem'>
+           <button className='menuButton'>Yoga</button>
+          </div>
+        </Link>
+
+        <Link to="/entertainment">
+          <div className='menuItem'>
+            <button className='menuButton'>Entertainment</button>
+          </div> 
+        </Link>
+
+        <Link to="/friends">
+         <div className='menuItem'>
+           <button className='menuButton'>Friends</button>
+          </div> 
+        </Link>
+
+        <Link to="/games">
+         <div className='menuItem'>
+           <button className='menuButton'>Games</button>
+          </div>
+        </Link>
+
+        <Link to="/emergency">
+         <div className='menuItem'>
+            <button className='menuButton'>Emergency</button>
+          </div>
         </Link>
 
         <button className='profile_btn' onClick={handleOpenProfilePage}>

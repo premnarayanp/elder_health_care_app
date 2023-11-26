@@ -1,5 +1,6 @@
 .nav {
-    background: rgb(222, 180, 180);
+    /* background: rgb(222, 180, 180); */
+    background: burlywood;
     height: 8%;
     padding: 10px;
     box-sizing: border-box;
@@ -27,24 +28,20 @@
 }
 
 .menuButton {
-    background-color: rgb(226, 147, 147);
     color: white;
     outline: none;
-    border-radius: 10px;
-    font-size: 18px;
+    border: 0;
+    font-size: 13px;
     font-weight: 700;
     cursor: pointer;
+    background: none;
+    /* background-color: rgb(226, 147, 147); */
+    /* border-radius: 10px; */
 }
 
-
-/* .rounded-img-container {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
+.menuItem :hover {
+    color: gray;
+    /* font-size: 15px; */
+    border-bottom: 1px solid white;
+    transition: color 0.5s, border-bottom 4s;
 }
-
-.rounded-img-container img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-} */
