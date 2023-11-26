@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/elder_health_care_app/static/css/main.c670be42.css",
+    "main.js": "/elder_health_care_app/static/js/main.6e28a914.js",
+    "index.html": "/elder_health_care_app/index.html",
+    "main.c670be42.css.map": "/elder_health_care_app/static/css/main.c670be42.css.map",
+    "main.6e28a914.js.map": "/elder_health_care_app/static/js/main.6e28a914.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c670be42.css",
+    "static/js/main.6e28a914.js"
+  ]
+}
