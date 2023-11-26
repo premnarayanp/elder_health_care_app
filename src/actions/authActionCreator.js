@@ -1,4 +1,4 @@
-import {SUCCESS_SIGN_UP,SUCCESS_LOGIN,SUCCESS_LOGOUT,SET_USER} from './actionType';
+import {SUCCESS_SIGN_UP,SUCCESS_LOGIN,SUCCESS_LOGOUT,SET_USER,CLOSE_PROFILE} from './actionType';
 import { login as userLogin,signUp} from '../api/index';
 import {
     setItemInLocalStorage,
@@ -43,6 +43,14 @@ export function successSignUp(val,msg){
          user:user,
      }
  }
+
+
+ export function openProfilePage(val){
+  return{
+       type:CLOSE_PROFILE,
+       isOpenProfilePage:val,
+   }
+}
 
 
  // API calls handle functions

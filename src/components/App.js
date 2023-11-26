@@ -1,8 +1,10 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-import {  Home ,Login,Signup } from '../pages/index';
+import {  Home ,Login,Signup,} from '../pages/index';
 import  Navbar  from './Navbar';
+import Profile from './Profile';
+
 import '../styles/app.css'
 import { connect } from 'react-redux';
 
@@ -16,6 +18,9 @@ function App(props){
   return (
     <div className="App">
       <Navbar />
+      {
+        auth.isOpenProfilePage && <Profile auth={auth} dispatch={dispatch} />
+      }
       <Routes>
         <Route path="/" element={ auth.user?<Home />:<Navigate to="/users/login" />}/>
         <Route exact path="/users/login" element={<Login auth={auth} dispatch={dispatch} />} />

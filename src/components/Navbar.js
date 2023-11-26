@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {logout} from'../actions/authActionCreator';
+import {openProfilePage} from'../actions/authActionCreator';
 import '../styles/navbar.css'
 import { connect } from 'react-redux';
 
  function Navbar(props){
   const {auth,dispatch}=props;
 
-  const logoutFromDevice=()=>{
-    dispatch(logout());
+  const handleOpenProfilePage=()=>{
+    dispatch(openProfilePage(true));
   }
 
   return (
@@ -18,11 +18,9 @@ import { connect } from 'react-redux';
            <button className='menuButton'>Home</button>
         </Link>
 
-        <button className='menuButton' onClick={logoutFromDevice}>Log out</button>
-
-        <div className='rounded-img-container'>
+        <button className='profile_btn' onClick={handleOpenProfilePage}>
           <img src={require('../assets/myPhoto.jpg')} alt="user-pic" />
-        </div>
+        </button>
       </div>
     :
 

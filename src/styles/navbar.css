@@ -9,13 +9,18 @@
     position: relative;
 }
 
-.rounded-img-container {
+.profile_btn {
     height: 50px;
     width: 50px;
     cursor: pointer;
+    outline: none;
+    border: 0;
+    display: block;
+    background: rgb(222, 180, 180);
+    border-radius: 100%;
 }
 
-.rounded-img-container img {
+.profile_btn img {
     height: 100%;
     width: 100%;
     border-radius: 100%;
@@ -30,3 +35,16 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+
+/* .rounded-img-container {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.rounded-img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+} */
