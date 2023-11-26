@@ -19,7 +19,9 @@ import {
   Entertainment,
   Friends,
   Games,
-  Emergency} from '../pages/index';
+  Emergency,
+  Setting
+} from '../pages/index';
 
 function App(props){
   const {auth,dispatch}=props;
@@ -53,7 +55,8 @@ function App(props){
         <Route path="/friends" element={ <PrivateRoute> <Friends /> </PrivateRoute>}/>
         <Route path="/games" element={ <PrivateRoute> <Games /> </PrivateRoute>}/>
         <Route path="/emergency" element={ <PrivateRoute> <Emergency /> </PrivateRoute>}/>
-
+        <Route path="/setting" element={ <PrivateRoute> <Setting /> </PrivateRoute>}/>
+        
         <Route exact path="/users/login" element={<Login auth={auth} dispatch={dispatch} />} />
         <Route exact path="/users/signup" element={<Signup auth={auth} dispatch={dispatch} />} /> 
         <Route path="*" element={<Page404 />} />

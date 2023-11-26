@@ -11,7 +11,7 @@ import Entertainment from './Entertainment';
 import Friends from './Friends';
 import Games from './Games';
 import Emergency from './Emergency';
-
+import Setting from './Setting';
 export {
     Home, 
     Login, 
@@ -25,5 +25,6 @@ export {
     Entertainment,
     Friends,
     Games,
-    Emergency
+    Emergency,
+    Setting
 };

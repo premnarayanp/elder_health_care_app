@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {logout,openProfilePage} from'../actions/authActionCreator';
 import '../styles/profile.css'
 
@@ -31,9 +32,12 @@ import '../styles/profile.css'
       </div>
 
       <div className='profile_item_container'>
-        <div className='profile_item'>
-           <button className=''>Setting</button>
-        </div>
+
+        <Link to="/setting">
+          <div className='profile_item'>
+            <button className=''>Setting</button>
+          </div>
+        </Link>
 
         <div className='profile_item'>
           <button className='' onClick={logoutFromDevice}>Log out</button>
